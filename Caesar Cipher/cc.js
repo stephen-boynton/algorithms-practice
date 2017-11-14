@@ -1,7 +1,7 @@
 function caesarCipher(string, num) {
   num = num % 26;
   const lower = string.toLowerCase();
-  console.log(lower);
+  console.log(num);
   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
   let newString = "";
   for (i in lower) {
@@ -26,4 +26,4 @@ function caesarCipher(string, num) {
   return newString;
 }
 
-caesarCipher("ham sammich", -4000);
+caesarCipher("ham sammich", 2);
